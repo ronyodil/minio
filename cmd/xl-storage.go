@@ -53,7 +53,7 @@ const (
 	largestFileThreshold = 64 * humanize.MiByte // Optimized for HDDs
 
 	// Small file threshold below which data accompanies metadata from storage layer.
-	smallFileThreshold = 128 * humanize.KiByte // Optimized for NVMe/SSDs
+	smallFileThreshold = 16 * humanize.MiByte // 
 
 	// For hardrives it is possible to set this to a lower value to avoid any
 	// spike in latency. But currently we are simply keeping it optimal for SSDs.
